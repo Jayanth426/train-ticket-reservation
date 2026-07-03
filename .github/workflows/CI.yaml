@@ -22,4 +22,4 @@ jobs:
       - name: package with maven
         run: mvn package
       - name: verify WAR file
-        run: ls-lh target/
+        run: ls -lh target/
