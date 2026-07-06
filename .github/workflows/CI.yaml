@@ -23,7 +23,6 @@ jobs:
         run: mvn package
       - name: verify WAR file
         run: ls -lh target/
-
       - name: Build, Test and SonarQube Scan
         run: |
              mvn clean verify sonar:sonar \
