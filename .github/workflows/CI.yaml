@@ -22,7 +22,10 @@ jobs:
       - name: package with maven
         run: mvn package
       - name: verify WAR file
-        run: ls -lh target/
+        run: |
+           pwd
+           ls -lh target/
+           find target -name "*.war"
         
          #Deploy to tomcat
          
