@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: trainbook-deployment
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: trainbook
+
+  template:
+    metadata:
+      labels:
+        app: trainbook
+
+    spec:
+      containers:
+      - name: trainbook
+        image: 278057566624.dkr.ecr.ap-south-2.amazonaws.com/trainbook:latest
+
+        ports:
+        - containerPort: 8080
+
+        imagePullPolicy: Always
