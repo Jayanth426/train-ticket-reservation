@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: trainbook
-        image: 278057566624.dkr.ecr.ap-south-2.amazonaws.com/trainbook:latest
+        image: 278057566624.dkr.ecr.us-west-1.amazonaws.com/project-eks-registory:latest
 
         ports:
         - containerPort: 8080
